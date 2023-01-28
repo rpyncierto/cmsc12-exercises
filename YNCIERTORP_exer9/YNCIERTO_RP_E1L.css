@@ -1,0 +1,107 @@
+/* This section specifies the style for all HTML form elements. */
+* {
+  font-family: Times New Roman;
+  margin: auto;
+  font-size: 18px;
+}
+
+/* This section specifies the style for all elements within the body tag, including font weight, background, and size. */
+body {
+  font-weight: bold;
+  background: url("https://i.pinimg.com/originals/c6/cb/a0/c6cba0b0e8c72036ab00faa4446f052f.jpg");
+  background-size: 51% 50%;
+}
+
+/* This section specifies the style for all elements within the form tag, including the positioning method and display property */
+form {
+  position: relative;
+  display: grid;
+}
+
+/* This section specifies the style for all elements within the fieldset tag, including the background color, border and margin */
+fieldset {
+  border-radius: 20px;
+  background: ghostwhite;
+  border: black solid 2px;
+  margin-bottom: 15px;
+}
+
+/* This section specifies the style for all elements within the legend tag, including the background color, border, padding, font style and margin */
+legend {
+  background: aliceblue;
+  border-radius: 20px;
+  padding: 10px;
+  border: black solid 2px;
+  font-family:  Lucida Handwriting;
+  margin-bottom: 20px;
+}
+
+/* This section specifies the style for the input tag, including the border, and margins */
+input {
+  border-radius: 4px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  border: solid dimgrey 1px;
+}
+
+/* This section specifies the style for the button tag, including the background color, border, width, font style, cursor property and margin */
+button {
+  background-color: lightblue;
+  border: black solid 2px;
+  border-radius: 20px;
+  width: 80px;
+  margin-top: 20px; 
+  cursor: pointer; 
+}
+
+/* This section specifies the style for the textarea, specifically its resize property */
+textarea {
+  resize: none;
+}
+
+/* This section specifies the style for the textarea and select tag, including the border, and margin */
+textarea, select {
+  margin-bottom: 5px;
+  border: solid dimgrey 1px;
+}
+
+/* This section specifies the style for the label and select tag, including their width, and display property */
+select, label {
+  width: 40%;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+/* This section specifies the specific styles for the elements with specific id, including their margins and widths. */
+#ninjavan, #jnt, #grab, #toktok, #yes {
+  margin-left: 30px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+#jnt {
+  margin-top: 10px;
+}
+#dtime {
+  width: 197px;
+}
+#mpayment {
+  width: 200px;
+}
+#bday {
+  width: 221px;
+}
+#style, #color {
+  width: 100px;
+}
+#quantity {
+  width: 94px
+}
+#style, #color, #quantity {
+  margin-left: 25px;
+}
+button[type=submit],button[type=reset] {
+  margin-left: 35px;
+}
+button[type=reset] {
+  margin-right: 35px;
+}

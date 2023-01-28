@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pants Shop</title>
+</head>
+<body>
+	<form>
+		<fieldset>
+			<legend>Customer Details</legend>
+			
+				<!--Customer's Name-->
+				<label for="name">Name: </label>
+					<input type="text" name="name" id="name" required><br>
+				
+				<!--Customer's Birthday-->
+				<label for="bday">Birthday: </label>
+					<input type="date" name="birthday" id="bday" required><br>
+
+				<!--Customer's Mobile Number-->
+				<label for="mnumber">Mobile Number</label>
+					<input type="tel" name="mobilenumber" id="mnumber" pattern="[0][9][0-9]{2}-[0-9]{3}-[0-9]{4}" required><br>
+
+				<!--Customer's Email Address-->
+				<label for="eaddress">Email Address</label>
+					<input type="email" name="emailaddress" id="eaddress" required><br>
+
+				<!--Customer's Address-->
+				<label for="address">Address:</label><br>
+					<textarea name="address" id="address" rows="4" cols="50" required></textarea><br>
+
+				<!--Same as Shipping Address-->
+				Is this the same as shipping address?<br>
+					<input type="radio" name="shippingaddress" id="yes" value="Yes" required>
+						<label for="yes">Yes</label>
+					<input type="radio" name="shippingaddress" id="no" value="No">
+						<label for="no">No</label><br>
+
+				<!--Customer's Other Address-->
+				<label for="oaddress">Other Address</label><br>
+					<textarea name="otheraddress" id="oaddress" rows="4" cols="50"></textarea><br>
+
+				<!--Customer's Preffered Delivery Time-->
+				<label for="dtime">Preferred Delivery Time </label>
+					<input type="time" name="deliverytime" id="dtime" required><br>
+
+				<!--Customer's Mode of Payment-->
+				<label for="mpayment">Mode of Payment </label>
+					<select name="modeofpayment" id="mpayment" required>
+						<option value=""></option>
+						<option value="visa">Visa</option>
+						<option value="mastercard">Mastercard</option>
+						<option value="gcash">Gcash</option>
+						<option value="cod">Cash on Delivery</option>
+					</select><br>
+
+				<!--Courier-->
+				Courier Name<br>
+					<input type="checkbox" name="courier" id="jnt" value="jnt">
+						<label for="jnt">JNT</label><br>
+					<input type="checkbox" name="courier" id="ninjavan" value="ninjavan">
+						<label for="ninjavan">Ninja Van</label><br>
+					<input type="checkbox" name="courier" id="grab" value="grab">
+						<label for="grab">Grab</label><br>
+					<input type="checkbox" name="courier" id="toktok" value="toktok">
+						<label for="toktok">Toktok</label>
+
+		</fieldset>
+
+		<fieldset>
+			<legend>Order Details</legend>
+
+				<!--Order Style-->
+				<label for="style">Pants Style: </label>
+					<select name="style" id="style">
+						<option value=""></option>
+						<option value="straight">Straight</option>
+						<option value="sweatpants">Sweatpants</option>
+						<option value="skinnyjeans">Skinny Jeans</option>
+						<option value="wideleg">Wide Leg</option>
+						<option value="bootcut">Bootcut</option>
+						<option value="flarepants">Flare pants</option>
+						<option value="peggedpants">Pegged Pants</option>
+					</select><br>
+
+				<!--Order Color-->
+				<label for="color">Pants Color: </label>
+					<input type="color" name="color" id="color"><br>
+
+				<!--Order Quantity-->
+				<label for="quantity">Quantity </label>
+					<input type="number" name="quantity" id="quantity" min="1" max="10" required><br>
+
+				<!--Submit and Reset-->
+				<button type="submit">Submit</button>
+				<button type="reset">Reset</button>
+
+		</fieldset>
+	</form>
+</body>
+</html>
